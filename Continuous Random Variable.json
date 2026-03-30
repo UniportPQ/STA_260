@@ -1,0 +1,174 @@
+[
+  {
+    "type": "pageInfo",
+    "kind": "subjective",
+    "course_title": "Introduction to Probability and Statistics",
+    "code": "STA 260",
+    "session": "Continuous Random Variable",
+    "topics": ["Statistics", "Probability", "Random Variables"],
+    "time": "90"
+  },
+  {
+    "type": "Instruction",
+    "content": "Answer all Questions"
+  },
+  {
+    "type": "heading",
+    "heading": "Continuous Random Variable"
+  },
+  {
+    "type": "Question",
+    "name": "Question 1",
+    "topic": ["Statistics", "Probability", "Random Variables"],
+    "Question": {
+      "content": "What is a Continuous Random Variable?",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "A continuous random variable is a variable that can take on an infinite, uncountable number of possible values within a given range."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Defining Continuous Random Variables</h4>\n <p>Unlike discrete random variables (which have countable values like 1, 2, 3), a continuous random variable can take any value within an interval. Examples include height, weight, temperature, and time.</p>\n <div style='margin-bottom: 12px;'>\n <strong style='color: var(--strongColor);'>Key Concept</strong><br>\n Because the set of possible outcomes is infinite and uncountable, the probability of the variable taking any <em>exact</em> single value is zero. Probability is only defined over a range of values, represented by the area under a curve.\n </div>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2",
+    "topic": ["Statistics", "Probability", "Random Variables"],
+    "Question": {
+      "content": "Which of the following is an example of a continuous random variable?",
+      "type": "OBJ",
+      "options": [
+        "The number of students in a class",
+        "The number of heads when flipping a coin 10 times",
+        "The height of a randomly selected person",
+        "The number of cars in a parking lot"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The height of a randomly selected person"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Identifying Continuous Variables</h4>\n <p>Height is a classic example of a continuous variable because it can take on an infinite number of values (e.g., 5.8 ft, 5.81 ft, 5.812 ft, etc.) within a possible range. The other options are discrete, as they represent countable quantities.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3",
+    "topic": ["Statistics", "Probability", "Random Variables"],
+    "Question": {
+      "content": "For a continuous random variable, the probability of it taking on any specific exact value is:",
+      "type": "OBJ",
+      "options": [
+        "1",
+        "0",
+        "Greater than 0",
+        "Depends on the variable"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Probability of a Single Point</h4>\n <p>For a continuous random variable, the probability of observing an <em>exact</em> value, \\( P(X = a) \\), is always 0. This is because the number of possible outcomes is infinite. Instead, we calculate probabilities over intervals, like \\( P(a < X < b) \\).</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4",
+    "topic": ["Statistics", "Probability", "Random Variables"],
+    "Question": {
+      "content": "What is the name of the function that describes the relative likelihood for a continuous random variable to take on a given value, and its total area is always equal to 1?",
+      "type": "OBJ",
+      "options": [
+        "Probability Mass Function (PMF)",
+        "Cumulative Distribution Function (CDF)",
+        "Moment Generating Function (MGF)",
+        "Probability Density Function (PDF)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Probability Density Function (PDF)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Probability Density Function (PDF)</h4>\n <p>The PDF, denoted as \\( f(x) \\), is the core function for continuous random variables. It has two key properties:</p>\n <ul>\n <li>\\( f(x) \\ge 0 \\) for all \\( x \\)</li>\n <li>The total area under the curve is 1: \\( \\int_{-\\infty}^{\\infty} f(x) \\, dx = 1 \\)</li>\n </ul>\n <p>Probability is found by calculating the area under the PDF curve over a specific interval.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5",
+    "topic": ["Statistics", "Probability", "Random Variables"],
+    "Question": {
+      "content": "If \\( f(x) \\) is the probability density function of a continuous random variable \\( X \\), how is \\( P(a \\le X \\le b) \\) calculated?",
+      "type": "OBJ",
+      "options": [
+        "\\( f(b) - f(a) \\)",
+        "\\( \\frac{f(a)}{f(b)} \\)",
+        "\\( \\int_{a}^{b} f(x) \\, dx \\)",
+        "\\( \\sum_{x=a}^{b} f(x) \\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( \\int_{a}^{b} f(x) \\, dx \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Calculating Probabilities</h4>\n <p>For a continuous random variable, the probability of an event is the area under its PDF curve. This area is calculated using the definite integral of the PDF from the lower bound \\( a \\) to the upper bound \\( b \\).</p>\n <p style='text-align: center; margin: 10px 0;'>\\( P(a \\le X \\le b) = \\int_{a}^{b} f(x) \\, dx \\)</p>\n <p>Note that because it's continuous, \\( P(a \\le X \\le b) = P(a < X < b) \\).</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 6",
+    "topic": ["Statistics", "Probability", "Random Variables"],
+    "Question": {
+      "content": "The Cumulative Distribution Function (CDF), \\( F(x) \\), for a continuous random variable is defined as:",
+      "type": "OBJ",
+      "options": [
+        "\\( F(x) = P(X \\ge x) \\)",
+        "\\( F(x) = P(X \\le x) \\)",
+        "\\( F(x) = f(x) \\)",
+        "\\( F(x) = \\int_{-\\infty}^{\\infty} f(t) \\, dt \\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( F(x) = P(X \\le x) \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Cumulative Distribution Function (CDF)</h4>\n <p>The CDF, \\( F(x) \\), gives the probability that the random variable \\( X \\) takes a value less than or equal to \\( x \\). For a continuous variable, it is the integral of the PDF from negative infinity to \\( x \\).</p>\n <p style='text-align: center; margin: 10px 0;'>\\( F(x) = P(X \\le x) = \\int_{-\\infty}^{x} f(t) \\, dt \\)</p>\n <p>It is a non-decreasing function that ranges from 0 to 1.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 7",
+    "topic": ["Statistics", "Probability", "Random Variables"],
+    "Question": {
+      "content": "The mean, or expected value, \\( E[X] \\), of a continuous random variable with PDF \\( f(x) \\) is given by:",
+      "type": "OBJ",
+      "options": [
+        "\\( E[X] = \\sum x f(x) \\)",
+        "\\( E[X] = \\int x f(x) \\, dx \\)",
+        "\\( E[X] = \\int f(x) \\, dx \\)",
+        "\\( E[X] = x f(x) \\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\( E[X] = \\int x f(x) \\, dx \\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Expected Value for Continuous Variables</h4>\n <p>The expected value is the probability-weighted average of all possible values. For a continuous variable, the sum becomes an integral over the entire range of \\( x \\).</p>\n <p style='text-align: center; margin: 10px 0;'>\\( E[X] = \\int_{-\\infty}^{\\infty} x \\cdot f(x) \\, dx \\)</p>\n <p>This is analogous to the center of mass of the distribution.</p>\n</div>"
+    }
+  }
+]
