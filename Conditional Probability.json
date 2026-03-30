@@ -1,0 +1,93 @@
+[
+  {
+    "type": "pageInfo",
+    "kind": "exam",
+    "course_title": "Introduction to Probability and Statistics",
+    "code": "STA 260",
+    "session": "Quiz",
+    "topics": [
+      "Conditional Probability",
+      "Bayes' Theorem",
+      "Independent Events",
+      "Probability Rules"
+    ],
+    "time": "30"
+  },
+  {
+    "type": "Instruction",
+    "content": "Instruction: Answer all questions. Select the most appropriate option for each."
+  },
+  {
+    "type": "heading",
+    "heading": "Conditional Probability"
+  },
+  {
+    "type": "Question",
+    "name": "Question 1",
+    "topic": ["Conditional Probability", "Bayes' Theorem"],
+    "Question": {
+      "content": "In a certain population, 2% of people have a rare disease. A diagnostic test has a 98% sensitivity (true positive rate) and a 95% specificity (true negative rate). If a randomly selected person tests positive, what is the probability that they actually have the disease?",
+      "type": "OBJ",
+      "options": [
+        "0.285",
+        "0.0196",
+        "0.666",
+        "0.098"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.285"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Step-by-Step Solution (Bayes' Theorem)</h4><p><strong>Step 1: Define events.</strong><br>Let D = person has the disease.<br>Let T+ = test result is positive.<br><strong>Step 2: Write given probabilities.</strong><br>Prevalence: \\(P(D) = 0.02\\) ⇒ \\(P(D') = 0.98\\)<br>Sensitivity: \\(P(T+|D) = 0.98\\) (true positive rate)<br>Specificity: \\(P(T-|D') = 0.95\\) ⇒ false positive rate \\(P(T+|D') = 1 - 0.95 = 0.05\\)<br><strong>Step 3: What we need.</strong><br>We want \\(P(D|T+)\\) – probability of disease given a positive test.<br><strong>Step 4: Apply Bayes' Theorem.</strong><br>\\[P(D|T+) = \\frac{P(T+|D)P(D)}{P(T+|D)P(D) + P(T+|D')P(D')}\\]<br><strong>Step 5: Plug in numbers.</strong><br>Numerator = \\(0.98 \\times 0.02 = 0.0196\\)<br>Denominator = \\(0.0196 + (0.05 \\times 0.98)\\) = \\(0.0196 + 0.049 = 0.0686\\)<br>\\[P(D|T+) = \\frac{0.0196}{0.0686} \\approx 0.2857\\]<br><strong>Step 6: Interpret.</strong><br>Only about 28.6% of people who test positive actually have the disease, because the disease is rare and false positives are relatively common.</p></div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2",
+    "topic": ["Conditional Probability", "Without Replacement"],
+    "Question": {
+      "content": "A box contains 3 red balls and 5 blue balls. Two balls are drawn without replacement. Given that the first ball drawn is blue, what is the probability that the second ball is also blue?",
+      "type": "OBJ",
+      "options": [
+        "\\(\\frac{4}{7}\\)",
+        "\\(\\frac{5}{8}\\)",
+        "\\(\\frac{1}{2}\\)",
+        "\\(\\frac{5}{7}\\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\frac{4}{7}\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Step-by-Step Solution (Conditional Probability without Replacement)</h4><p><strong>Step 1: Understand the situation.</strong><br>Initially: 3 red (R) and 5 blue (B). Total = 8 balls.<br>We draw two balls without replacement. The first ball is known to be blue.<br><strong>Step 2: Update the composition after the first draw.</strong><br>Since the first ball is blue and not replaced, we remove one blue ball.<br>New counts: R = 3 (unchanged), B = 5 − 1 = 4. Total balls left = 7.<br><strong>Step 3: Probability of second ball being blue.</strong><br>Now the second draw is from the remaining 7 balls, with 4 blue.<br>So \\(P(\\text{second blue} \\mid \\text{first blue}) = \\frac{\\text{number of blue left}}{\\text{total left}} = \\frac{4}{7}\\).<br><strong>Step 4: Check with conditional probability formula (optional).</strong><br>\\[P(B_2|B_1) = \\frac{P(B_1 \\cap B_2)}{P(B_1)} = \\frac{\\frac{5}{8} \\cdot \\frac{4}{7}}{\\frac{5}{8}} = \\frac{4}{7}\\]</p></div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3",
+    "topic": ["Conditional Probability", "Independent Events"],
+    "Question": {
+      "content": "Events A and B are such that \\(P(A) = 0.4\\), \\(P(B) = 0.3\\), and \\(P(A \\cup B) = 0.6\\). Are A and B independent?",
+      "type": "OBJ",
+      "options": [
+        "Yes, because \\(P(A \\cap B) = 0.12\\)",
+        "No, because \\(P(A \\cap B) = 0.1\\)",
+        "Yes, because \\(P(A|B) = P(A)\\)",
+        "No, because \\(P(A \\cup B) \\neq P(A) + P(B)\\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "No, because \\(P(A \\cap B) = 0.1\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Step-by-Step Solution (Independence Test)</h4><p><strong>Step 1: Recall the addition rule.</strong><br>For any two events: \\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\).<br><strong>Step 2: Solve for \\(P(A \\cap B)\\).</strong><br>Given: \\(P(A) = 0.4\\), \\(P(B) = 0.3\\), \\(P(A \\cup B) = 0.6\\).<br>\\[0.6 = 0.4 + 0.3 - P(A \\cap B)\\]<br>\\[0.6 = 0.7 - P(A \\cap B)\\]<br>\\[P(A \\cap B) = 0.7 - 0.6 = 0.1\\]<br><strong>Step 3: Check independence condition.</strong><br>Events A and B are independent if and only if \\(P(A \\cap B) = P(A) \\cdot P(B)\\).<br>Compute product: \\(P(A) \\cdot P(B) = 0.4 \\times 0.3 = 0.12\\).<br><strong>Step 4: Compare.</strong><br>\\(0.1 \\neq 0.12\\), so the independence condition fails.<br><strong>Step 5: Conclusion.</strong><br>A and B are not independent. The correct option states: \"No, because \\(P(A \\cap B) = 0.1\\).\"</p></div>"
+    }
+  }
+]
