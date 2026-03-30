@@ -1,1 +1,317 @@
 
+[
+  {
+    "type": "pageInfo",
+    "kind": "exam",
+    "course_title": "Introduction to Probability and Statistics",
+    "code": "STA 260",
+    "session": "Probability",
+    "topics": [
+      "Probability",
+      "Sample Space",
+      "Events",
+      "Axioms of Probability",
+      "Mutually Exclusive Events",
+      "Complement Rule",
+      "Addition Rule"
+    ],
+    "time": "90"
+  },
+  {
+    "type": "Instruction",
+    "content": "Instruction: Answer all questions. Section A contains objective questions. Section B contains theory questions."
+  },
+  {
+    "type": "heading",
+    "heading": "SECTION A"
+  },
+  {
+    "type": "Question",
+    "name": "Question 1",
+    "topic": ["Probability", "Sample Space"],
+    "Question": {
+      "content": "An experiment consists of tossing a fair coin three times. Which of the following represents the correct sample space?",
+      "type": "OBJ",
+      "options": [
+        "{H, T}",
+        "{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}",
+        "{HHH, TTT}",
+        "{HH, HT, TH, TT}"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Sample Space for Three Coin Tosses</h4><p><strong>What is Sample Space?</strong> A sample space (denoted S) is the set of all possible outcomes of a random experiment. Each outcome is called a sample point or elementary event.</p><p>When tossing a coin three times, each toss has 2 outcomes (H or T). By the multiplication principle, there are \\(2 \\times 2 \\times 2 = 2^3 = 8\\) equally likely outcomes. The sample space must list all possible sequences: HHH, HHT, HTH, HTT, THH, THT, TTH, TTT. Option {HH, HT, TH, TT} is for two tosses, not three.</p></div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2",
+    "topic": ["Probability", "Events"],
+    "Question": {
+      "content": "In an experiment of rolling a fair six-sided die once, let event A = {2, 4, 6} and event B = {1, 2, 3}. Which of the following represents \\(A \\cap B\\)?",
+      "type": "OBJ",
+      "options": [
+        "{1, 2, 3, 4, 6}",
+        "{2}",
+        "{1, 3, 4, 6}",
+        "∅"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "{2}"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Intersection of Events</h4><p><strong>What is an Event?</strong> An event is a subset of the sample space – a collection of one or more outcomes. Events are typically denoted by capital letters A, B, C, etc.</p><p>The intersection \\(A \\cap B\\) (read as \"A intersect B\") contains all outcomes that belong to both A and B simultaneously. Here, A = {2,4,6} and B = {1,2,3}. The only element common to both sets is 2. Therefore, \\(A \\cap B = \\{2\\}\\).</p></div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3",
+    "topic": ["Probability", "Mutually Exclusive"],
+    "Question": {
+      "content": "Two events A and B are said to be mutually exclusive if and only if:",
+      "type": "OBJ",
+      "options": [
+        "P(A) = P(B)",
+        "A and B cannot occur simultaneously",
+        "P(A ∪ B) = P(A) + P(B) + P(A ∩ B)",
+        "P(A ∩ B) = 1"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "A and B cannot occur simultaneously"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Mutually Exclusive Events</h4><p>Two events are mutually exclusive (or disjoint) if they have no outcomes in common – they cannot occur at the same time. Mathematically, \\(A \\cap B = \\emptyset\\). For example, when rolling a die once, the events \"rolling an even number\" and \"rolling an odd number\" are mutually exclusive because a single roll cannot produce both an even and odd number. The probability rule for mutually exclusive events is \\(P(A \\cup B) = P(A) + P(B)\\).</p></div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4",
+    "topic": ["Probability", "Axioms"],
+    "Question": {
+      "content": "Which of the following statements violates the axioms of probability?",
+      "type": "OBJ",
+      "options": [
+        "P(A) = 0.5",
+        "P(A) = 1.2",
+        "P(A) = 0",
+        "P(A) = 0.25"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "P(A) = 1.2"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>First Axiom of Probability</h4><p><strong>What is Probability?</strong> Probability is a numerical measure of the likelihood that an event will occur. It ranges from 0 (impossible) to 1 (certain).</p><p>The three axioms of probability are:<br><strong>Axiom 1:</strong> \\(0 \\leq P(A) \\leq 1\\) – probability is always between 0 and 1 inclusive.<br><strong>Axiom 2:</strong> \\(P(S) = 1\\) – the probability of the entire sample space is 1.<br><strong>Axiom 3:</strong> For mutually exclusive events, \\(P(A_1 \\cup A_2 \\cup \\ldots) = P(A_1) + P(A_2) + \\ldots\\).</p><p>A probability of 1.2 exceeds 1, directly violating Axiom 1.</p></div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5",
+    "topic": ["Probability", "Complement"],
+    "Question": {
+      "content": "If \\(P(A) = 0.35\\), what is \\(P(A')\\) where \\(A'\\) is the complement of A?",
+      "type": "OBJ",
+      "options": [
+        "0.35",
+        "0.65",
+        "0.35²",
+        "Cannot be determined"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.65"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Complement Rule</h4><p>The complement of an event A, denoted \\(A'\\) or \\(A^c\\), contains all outcomes in the sample space that are NOT in A. Since either A occurs or it does not, \\(P(A) + P(A') = 1\\). Therefore, \\(P(A') = 1 - P(A) = 1 - 0.35 = 0.65\\). This rule is derived from the axioms of probability.</p></div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 6",
+    "topic": ["Probability", "Addition Rule"],
+    "Question": {
+      "content": "For two events A and B, \\(P(A) = 0.4\\), \\(P(B) = 0.5\\), and \\(P(A \\cap B) = 0.2\\). What is \\(P(A \\cup B)\\)?",
+      "type": "OBJ",
+      "options": [
+        "0.9",
+        "0.7",
+        "0.1",
+        "0.3"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.7"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Addition Rule of Probability</h4><p>The addition rule states that for any two events A and B: \\(P(A \\cup B) = P(A) + P(B) - P(A \\cap B)\\). This formula accounts for the overlap (intersection) being counted twice when adding individual probabilities. Substituting the given values: \\(0.4 + 0.5 - 0.2 = 0.7\\).</p></div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 7",
+    "topic": ["Probability", "Axioms"],
+    "Question": {
+      "content": "If S is the sample space of an experiment, which of the following must be true according to the axioms of probability?",
+      "type": "OBJ",
+      "options": [
+        "P(S) = 0",
+        "P(S) = 1",
+        "P(S) > 1",
+        "P(S) = 0.5"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "P(S) = 1"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Second Axiom of Probability</h4><p><strong>What is Sample Space?</strong> The sample space (S) is the set of all possible outcomes of a random experiment. For example, rolling a die: \\(S = \\{1,2,3,4,5,6\\}\\). Tossing a coin: \\(S = \\{H, T\\}\\).</p><p>The second axiom states that the probability of the entire sample space is 1, representing certainty that some outcome in S will occur when the experiment is performed. This is sometimes called the \"normalization\" condition.</p></div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 8",
+    "topic": ["Probability", "Terminology"],
+    "Question": {
+      "content": "In probability theory, the term \"experiment\" refers to:",
+      "type": "OBJ",
+      "options": [
+        "A controlled laboratory setting",
+        "Any process that generates well-defined outcomes",
+        "Only scientific research",
+        "A single trial outcome"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Any process that generates well-defined outcomes"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Definition of an Experiment</h4><p>In probability, an experiment is any procedure or process that produces a well-defined set of possible outcomes. Key characteristics:<br>• It can be repeated under similar conditions<br>• All possible outcomes are known in advance<br>• The outcome on any given trial is uncertain (due to chance)<br>Examples: tossing a coin, rolling a die, drawing a card from a deck, measuring rainfall tomorrow, counting defective items in a batch.</p></div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 9",
+    "topic": ["Probability", "Events", "Addition Rule"],
+    "Question": {
+      "content": "If A and B are mutually exclusive events with \\(P(A) = 0.3\\) and \\(P(B) = 0.4\\), what is \\(P(A \\cup B)\\)?",
+      "type": "OBJ",
+      "options": [
+        "0.12",
+        "0.7",
+        "0.1",
+        "0.58"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.7"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Addition Rule for Mutually Exclusive Events</h4><p><strong>What is an Event?</strong> An event is any subset of the sample space. For example, when rolling a die, \"rolling a prime number\" is the event {2,3,5}.</p><p>When events are mutually exclusive (disjoint), they have no outcomes in common, so \\(P(A \\cap B) = 0\\). The addition rule simplifies to: \\(P(A \\cup B) = P(A) + P(B) = 0.3 + 0.4 = 0.7\\). The events cannot occur together, so the probability of either occurring is simply the sum of their individual probabilities.</p></div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 10",
+    "topic": ["Probability", "Axioms"],
+    "Question": {
+      "content": "Let \\(A_1, A_2, A_3\\) be three events. According to the general addition rule, \\(P(A_1 \\cup A_2 \\cup A_3)\\) equals:",
+      "type": "OBJ",
+      "options": [
+        "\\(P(A_1) + P(A_2) + P(A_3)\\)",
+        "\\(P(A_1) + P(A_2) + P(A_3) - P(A_1 \\cap A_2) - P(A_1 \\cap A_3) - P(A_2 \\cap A_3)\\)",
+        "\\(P(A_1) + P(A_2) + P(A_3) - P(A_1 \\cap A_2) - P(A_1 \\cap A_3) - P(A_2 \\cap A_3) + P(A_1 \\cap A_2 \\cap A_3)\\)",
+        "\\(P(A_1 \\cap A_2) + P(A_2 \\cap A_3) + P(A_1 \\cap A_3)\\)"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(P(A_1) + P(A_2) + P(A_3) - P(A_1 \\cap A_2) - P(A_1 \\cap A_3) - P(A_2 \\cap A_3) + P(A_1 \\cap A_2 \\cap A_3)\\)"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>General Addition Rule (Inclusion-Exclusion)</h4><p>The general addition rule for three events extends the principle of inclusion-exclusion. Starting with the sum of individual probabilities \\(P(A_1) + P(A_2) + P(A_3)\\) counts the intersections twice. We subtract the pairwise intersections \\(P(A_1 \\cap A_2) + P(A_1 \\cap A_3) + P(A_2 \\cap A_3)\\) to correct the double-counting. However, the triple intersection \\(P(A_1 \\cap A_2 \\cap A_3)\\) was subtracted too many times (it was included three times initially and subtracted three times), so we add it back once. This ensures each region of the Venn diagram is counted exactly once.</p></div>"
+    }
+  },
+  {
+    "type": "heading",
+    "heading": "SECTION B: Theory Questions"
+  },
+  {
+    "type": "Instruction",
+    "content": "Answer all questions. Show all necessary workings where applicable."
+  },
+  {
+    "type": "Question",
+    "name": "Question 11",
+    "topic": ["Probability"],
+    "Question": {
+      "content": "What is probability?",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Probability is a numerical measure of the likelihood or chance that a specific event will occur, ranging from 0 (impossible) to 1 (certain)."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>What is Probability?</h4><p>Probability is the branch of mathematics that quantifies uncertainty. It provides a way to measure how likely an event is to occur under given conditions. Key concepts:</p><p><strong>Range:</strong> Probability values always lie between 0 and 1 inclusive. \\(P(E) = 0\\) means the event is impossible (cannot happen). \\(P(E) = 1\\) means the event is certain (must happen). Values between 0 and 1 represent varying degrees of likelihood – for example, \\(P(E) = 0.5\\) indicates equal chance of occurring or not occurring.</p><p><strong>Interpretations:</strong><br>• <strong>Classical (theoretical) probability:</strong> For equally likely outcomes, \\(P(E) = \\frac{\\text{number of favorable outcomes}}{\\text{total number of possible outcomes}}\\). Example: probability of rolling a 4 on a fair die is \\(\\frac{1}{6}\\).<br>• <strong>Frequentist probability:</strong> The limit of relative frequency as the number of trials approaches infinity. If we toss a coin 1000 times and get 502 heads, the probability of heads is approximately 0.502.<br>• <strong>Subjective probability:</strong> A personal degree of belief based on available information and experience.</p><p><strong>Formula:</strong> For an experiment with sample space S and event E, \\(P(E) = \\frac{n(E)}{n(S)}\\), where \\(n(E)\\) is the number of outcomes in E and \\(n(S)\\) is the total number of outcomes in S, provided all outcomes are equally likely.</p></div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 12",
+    "topic": ["Probability", "Sample Space"],
+    "Question": {
+      "content": "What is sample space?",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Sample space (denoted S) is the set of all possible distinct outcomes of a random experiment."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>What is Sample Space?</h4><p>The sample space is a fundamental concept in probability theory. It represents the universal set of all possible outcomes that can result from performing a random experiment. Key characteristics:</p><p><strong>Notation:</strong> The sample space is typically denoted by the letter S (or Ω). Each individual outcome in the sample space is called a sample point or elementary event.</p><p><strong>Types of Sample Spaces:</strong><br>• <strong>Finite sample space:</strong> Contains a finite number of outcomes. Example: tossing a coin once → \\(S = \\{H, T\\}\\) (2 outcomes).<br>• <strong>Countably infinite sample space:</strong> Contains infinitely many outcomes that can be listed. Example: number of coin tosses until first head → \\(S = \\{1, 2, 3, \\ldots\\}\\).<br>• <strong>Continuous sample space:</strong> Contains outcomes that form a continuum. Example: measuring the exact height of a randomly selected student → \\(S = \\{h: h > 0\\}\\) (an interval).</p><p><strong>Examples:</strong><br>• Rolling a fair six-sided die: \\(S = \\{1, 2, 3, 4, 5, 6\\}\\)<br>• Rolling two dice: \\(S = \\{(1,1), (1,2), \\ldots, (6,6)\\}\\) (36 outcomes)<br>• Drawing a card from a standard deck: \\(S = \\{A♠, 2♠, \\ldots, K♣\\}\\) (52 outcomes)<br>• Waiting time for a bus: \\(S = \\{t: t \\geq 0\\}\\) (all non-negative real numbers)</p><p><strong>Importance:</strong> The sample space serves as the foundation for probability calculations. Once we define S, we can identify events (subsets of S) and compute their probabilities based on the relative size of these subsets.</p></div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 13",
+    "topic": ["Probability", "Events"],
+    "Question": {
+      "content": "What is an event?",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "An event is any subset of the sample space – a collection of one or more outcomes from the sample space."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'><h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>What is an Event?</h4><p>In probability theory, an event is a set of outcomes from the sample space that we are interested in. When we perform an experiment, we say an event occurs if the outcome belongs to that event. Key concepts:</p><p><strong>Notation:</strong> Events are typically denoted by capital letters A, B, C, etc. Since events are subsets of S, they can be described using set notation or descriptive language.</p><p><strong>Types of Events:</strong><br>• <strong>Simple (elementary) event:</strong> Contains exactly one outcome. Example: rolling a die and getting a 4 → \\(A = \\{4\\}\\).<br>• <strong>Compound event:</strong> Contains two or more outcomes. Example: rolling an even number → \\(B = \\{2,4,6\\}\\).<br>• <strong>Certain event:</strong> Contains all outcomes – the sample space itself. \\(P(S) = 1\\).<br>• <strong>Impossible event:</strong> Contains no outcomes – the empty set ∅. \\(P(∅) = 0\\).<br>• <strong>Complement of an event:</strong> \\(A'\\) contains all outcomes not in A. \\(P(A') = 1 - P(A)\\).<br>• <strong>Mutually exclusive events:</strong> Events that cannot occur together – they have no outcomes in common (\\(A \\cap B = ∅\\)).</p><p><strong>Operations on Events:</strong><br>• <strong>Union (\\(A \\cup B\\)):</strong> The event that either A or B (or both) occurs.<br>• <strong>Intersection (\\(A \\cap B\\)):</strong> The event that both A and B occur.<br>• <strong>Complement (\\(A'\\)):</strong> The event that A does not occur.</p><p><strong>Examples with a Fair Die (S = {1,2,3,4,5,6}):</strong><br>• Event A = rolling an odd number: \\(A = \\{1,3,5\\}\\)<br>• Event B = rolling a number greater than 4: \\(B = \\{5,6\\}\\)<br>• \\(A \\cap B = \\{5\\}\\) (rolling a 5)<br>• \\(A \\cup B = \\{1,3,5,6\\}\\)<br>• \\(A' = \\{2,4,6\\}\\) (rolling an even number)</p></div>"
+    }
+  }
+]
