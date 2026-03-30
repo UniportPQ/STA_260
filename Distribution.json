@@ -1,0 +1,403 @@
+[
+  {
+    "type": "pageInfo",
+    "kind": "exam",
+    "course_title": "Probability and Statistics",
+    "code": "STA 260",
+    "session": "Distribution",
+    "topics": [
+      "Uniform Distribution",
+      "Exponential Distribution",
+      "Normal Distribution",
+      "Binomial Distribution",
+      "Continuous Probability Distributions"
+    ],
+    "time": "120"
+  },
+  {
+    "type": "Instruction",
+    "content": "Instruction: Answer all questions. Section A contains objective questions. Section B contains theory questions."
+  },
+  {
+    "type": "heading",
+    "heading": "Uniform Probability Distribution"
+  },
+  {
+    "type": "Question",
+    "name": "Question 1",
+    "topic": ["Uniform Distribution"],
+    "Question": {
+      "content": "A continuous random variable X follows a uniform distribution on the interval [2, 8]. What is the probability that X is between 3 and 5?",
+      "type": "OBJ",
+      "options": ["1/3", "1/2", "1/4", "2/3"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "1/3"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>🎲 Step‑by‑Step Explanation</h4>\n  <p><strong>What is a uniform distribution?</strong> It means every value between the smallest (a) and largest (b) is equally likely. The probability is just the length of the interval we care about divided by the total length.</p>\n  <p><strong>Step 1: Identify the parameters.</strong><br>\n  • Lower bound: \\(a = 2\\)<br>\n  • Upper bound: \\(b = 8\\)<br>\n  • Total length: \\(b - a = 8 - 2 = 6\\)</p>\n  <p><strong>Step 2: Identify the interval we want.</strong><br>\n  We want \\(P(3 \\le X \\le 5)\\).<br>\n  Length of this interval: \\(5 - 3 = 2\\)</p>\n  <p><strong>Step 3: Apply the uniform probability formula.</strong><br>\n  \\(P(c \\le X \\le d) = \\frac{d - c}{b - a} = \\frac{5 - 3}{8 - 2} = \\frac{2}{6} = \\frac{1}{3}\\)</p>\n  <p><strong>Final answer:</strong> \\(\\frac{1}{3}\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2",
+    "topic": ["Uniform Distribution"],
+    "Question": {
+      "content": "The waiting time for a bus is uniformly distributed between 0 and 10 minutes. What is the probability that a passenger waits more than 7 minutes?",
+      "type": "OBJ",
+      "options": ["0.3", "0.2", "0.7", "0.5"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.3"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>⏱️ Step‑by‑Step Explanation</h4>\n  <p><strong>Step 1: Parameters.</strong><br>\n  \\(a = 0\\), \\(b = 10\\). Total length = 10 minutes.</p>\n  <p><strong>Step 2: We want \\(P(X > 7)\\).</strong><br>\n  The event \\(X > 7\\) corresponds to the interval from 7 to 10. Its length = \\(10 - 7 = 3\\).</p>\n  <p><strong>Step 3: Formula for probability of being in an interval.</strong><br>\n  \\(P(X > 7) = \\frac{10 - 7}{10 - 0} = \\frac{3}{10} = 0.3\\).</p>\n  <p><strong>Final answer:</strong> \\(0.3\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3",
+    "topic": ["Uniform Distribution"],
+    "Question": {
+      "content": "For a uniform distribution on [a, b], the mean is given by:",
+      "type": "OBJ",
+      "options": ["(a+b)/2", "(b-a)/2", "a+b", "(a+b)/√2"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "(a+b)/2"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>📐 Mean of Uniform Distribution</h4>\n  <p>For a uniform distribution, every value between \\(a\\) and \\(b\\) is equally likely. The average (mean) is simply the midpoint of the interval:</p>\n  <p>\\[\\mu = \\frac{a + b}{2}\\]</p>\n  <p><strong>Why?</strong> The distribution is symmetric; the center balances the left and right halves. If you think of a line from \\(a\\) to \\(b\\), the middle point is exactly halfway.</p>\n  <p><strong>Example:</strong> For [2, 8], mean = \\((2+8)/2 = 5\\).</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4",
+    "topic": ["Uniform Distribution"],
+    "Question": {
+      "content": "If X is uniformly distributed on [0, 12], what is the variance?",
+      "type": "OBJ",
+      "options": ["12", "144", "4", "12.5"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "12"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>📊 Variance of Uniform Distribution</h4>\n  <p>The variance measures spread. For uniform distribution on [a, b]:</p>\n  <p>\\[\\sigma^2 = \\frac{(b-a)^2}{12}\\]</p>\n  <p><strong>Step 1:</strong> Here \\(a = 0\\), \\(b = 12\\), so \\(b-a = 12\\).</p>\n  <p><strong>Step 2:</strong> \\((b-a)^2 = 12^2 = 144\\).</p>\n  <p><strong>Step 3:</strong> Divide by 12: \\(144 / 12 = 12\\).</p>\n  <p><strong>Final answer:</strong> \\(12\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 1",
+    "topic": ["Uniform Distribution"],
+    "Question": {
+      "content": "Define the uniform probability distribution. State its probability density function, mean, and variance.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "A continuous random variable X is said to have a uniform distribution on the interval [a, b] if its probability density function is constant over that interval. The PDF is \\(f(x) = \\frac{1}{b-a}\\) for \\(a \\le x \\le b\\), and 0 elsewhere. The mean is \\(\\mu = \\frac{a+b}{2}\\) and the variance is \\(\\sigma^2 = \\frac{(b-a)^2}{12}\\)."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>📘 Uniform Distribution – Full Definition</h4>\n  <p>The uniform distribution (also called rectangular distribution) models situations where all outcomes in an interval are equally likely. The probability density function (PDF) is flat, meaning the height is the same everywhere.</p>\n  <p><strong>Key formulas:</strong><br>\n  • PDF: \\(f(x) = \\frac{1}{b-a}, \\quad a \\le x \\le b\\)<br>\n  • CDF: \\(F(x) = \\frac{x-a}{b-a}\\) (the probability that X ≤ x)<br>\n  • Mean: \\(\\mu = \\frac{a+b}{2}\\) (midpoint)<br>\n  • Variance: \\(\\sigma^2 = \\frac{(b-a)^2}{12}\\)</p>\n  <p><strong>Why 12?</strong> The 12 comes from integration of the squared deviation; it's a standard result.</p>\n</div>"
+    }
+  },
+  {
+    "type": "heading",
+    "heading": "Exponential Probability Distribution"
+  },
+  {
+    "type": "Question",
+    "name": "Question 1",
+    "topic": ["Exponential Distribution"],
+    "Question": {
+      "content": "The lifetime of a certain electronic component follows an exponential distribution with mean 100 hours. What is the probability that it lasts more than 150 hours?",
+      "type": "OBJ",
+      "options": ["0.2231", "0.6065", "0.3679", "0.4493"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.2231"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>⚡ Exponential Distribution – Probability of Exceeding a Value</h4>\n  <p><strong>Step 1: Find the rate λ.</strong><br>\n  For exponential, mean \\(\\mu = 1/\\lambda\\). Given mean = 100 hours, so<br>\n  \\(\\lambda = \\frac{1}{100} = 0.01\\) (failures per hour).</p>\n  <p><strong>Step 2: Use the survival function.</strong><br>\n  \\(P(X > x) = e^{-\\lambda x}\\).<br>\n  Here \\(x = 150\\) hours.</p>\n  <p><strong>Step 3: Compute exponent.</strong><br>\n  \\(\\lambda x = 0.01 \\times 150 = 1.5\\).</p>\n  <p><strong>Step 4: Calculate.</strong><br>\n  \\(e^{-1.5} \\approx 0.223130\\).</p>\n  <p><strong>Final answer:</strong> \\(0.2231\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2",
+    "topic": ["Exponential Distribution"],
+    "Question": {
+      "content": "If the time between arrivals at a service center follows an exponential distribution with a rate of 2 arrivals per hour, what is the probability that the time between arrivals is less than 30 minutes?",
+      "type": "OBJ",
+      "options": ["0.6321", "0.3935", "0.8647", "0.2212"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.6321"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>⏳ Exponential – Probability of Being Less Than a Value</h4>\n  <p><strong>Step 1: Understand λ.</strong><br>\n  Rate \\(\\lambda = 2\\) arrivals per hour. This means on average 2 events per hour, so the average waiting time is \\(1/\\lambda = 0.5\\) hour (30 minutes).</p>\n  <p><strong>Step 2: Convert to consistent units.</strong><br>\n  30 minutes = 0.5 hours. We want \\(P(X \\le 0.5)\\).</p>\n  <p><strong>Step 3: Use CDF formula.</strong><br>\n  \\(F(x) = P(X \\le x) = 1 - e^{-\\lambda x}\\).<br>\n  \\(P(X \\le 0.5) = 1 - e^{-2 \\times 0.5} = 1 - e^{-1}\\).</p>\n  <p><strong>Step 4: Compute.</strong><br>\n  \\(e^{-1} \\approx 0.367879\\); then \\(1 - 0.367879 = 0.632121\\).</p>\n  <p><strong>Final answer:</strong> \\(0.6321\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3",
+    "topic": ["Exponential Distribution"],
+    "Question": {
+      "content": "For an exponential distribution with parameter λ, the mean and standard deviation are:",
+      "type": "OBJ",
+      "options": ["1/λ and 1/λ", "λ and λ²", "1/λ and 1/λ²", "λ and 1/λ"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "1/λ and 1/λ"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>📈 Mean and Standard Deviation of Exponential</h4>\n  <p>For exponential distribution:<br>\n  • Mean \\(\\mu = \\frac{1}{\\lambda}\\)<br>\n  • Variance \\(\\sigma^2 = \\frac{1}{\\lambda^2}\\)</p>\n  <p>Therefore standard deviation \\(\\sigma = \\sqrt{1/\\lambda^2} = \\frac{1}{\\lambda}\\).</p>\n  <p>So both the mean and the standard deviation are \\(1/\\lambda\\). This is a special property: the spread equals the average waiting time.</p>\n  <p><strong>Final answer:</strong> \\(\\frac{1}{\\lambda}\\) and \\(\\frac{1}{\\lambda}\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4",
+    "topic": ["Exponential Distribution"],
+    "Question": {
+      "content": "The exponential distribution is often used to model:",
+      "type": "OBJ",
+      "options": [
+        "The number of successes in a fixed number of trials",
+        "The waiting time between events in a Poisson process",
+        "The sum of independent normal variables",
+        "The number of events in a fixed interval"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The waiting time between events in a Poisson process"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>🌊 Where Does Exponential Appear?</h4>\n  <p>The exponential distribution is the continuous counterpart of the geometric distribution. It models the time between events that occur randomly at a constant average rate – a Poisson process.</p>\n  <p><strong>Examples:</strong><br>\n  • Time between customer arrivals<br>\n  • Time between machine breakdowns<br>\n  • Time until a radioactive decay</p>\n  <p>It has the memoryless property: the future does not depend on the past.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5",
+    "topic": ["Exponential Distribution"],
+    "Question": {
+      "content": "Define the exponential probability distribution. State its probability density function, cumulative distribution function, mean, and variance.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The exponential distribution is a continuous probability distribution that models the time between events in a Poisson process. Its PDF is \\(f(x) = \\lambda e^{-\\lambda x}\\) for \\(x \\ge 0\\), and 0 otherwise. The CDF is \\(F(x) = 1 - e^{-\\lambda x}\\). The mean is \\(\\frac{1}{\\lambda}\\) and the variance is \\(\\frac{1}{\\lambda^2}\\)."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>📘 Exponential Distribution – Complete Definition</h4>\n  <p>The exponential distribution is used to model waiting times and lifetimes. Its key characteristic is the <strong>memoryless property</strong>: \\(P(X > s+t \\mid X > s) = P(X > t)\\).</p>\n  <p><strong>Formulas:</strong><br>\n  • PDF: \\(f(x) = \\lambda e^{-\\lambda x}, \\quad x \\ge 0\\)<br>\n  • CDF: \\(F(x) = 1 - e^{-\\lambda x}\\)<br>\n  • Mean: \\(E[X] = \\frac{1}{\\lambda}\\)<br>\n  • Variance: \\(\\operatorname{Var}(X) = \\frac{1}{\\lambda^2}\\)</p>\n  <p><strong>Parameter λ:</strong> rate (events per unit time). Larger λ means shorter waiting times.</p>\n</div>"
+    }
+  },
+  {
+    "type": "heading",
+    "heading": "Normal Distribution"
+  },
+  {
+    "type": "Question",
+    "name": "Question 1",
+    "topic": ["Normal Distribution"],
+    "Question": {
+      "content": "If Z is a standard normal random variable, what is \\(P(Z > 1.96)\\)?",
+      "type": "OBJ",
+      "options": ["0.025", "0.05", "0.475", "0.95"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.025"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>📊 Standard Normal – Upper Tail Probability</h4>\n  <p><strong>Step 1:</strong> A standard normal variable Z has mean 0 and standard deviation 1. The probability \\(P(Z \\le 1.96)\\) is a well‑known value: from tables, it's 0.975.</p>\n  <p><strong>Step 2:</strong> The total probability is 1, so \\(P(Z > 1.96) = 1 - P(Z \\le 1.96) = 1 - 0.975 = 0.025\\).</p>\n  <p>This 0.025 is used for constructing 95% confidence intervals (because 2.5% in each tail).</p>\n  <p><strong>Final answer:</strong> \\(0.025\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2",
+    "topic": ["Normal Distribution"],
+    "Question": {
+      "content": "The heights of adult men are normally distributed with mean 175 cm and standard deviation 8 cm. What proportion of men are taller than 183 cm?",
+      "type": "OBJ",
+      "options": ["0.1587", "0.3413", "0.8413", "0.0228"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.1587"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>📏 Normal Distribution – Finding Probability Using Z‑Score</h4>\n  <p><strong>Step 1:</strong> We have \\(X \\sim N(\\mu=175, \\sigma=8)\\). We want \\(P(X > 183)\\).</p>\n  <p><strong>Step 2: Compute the z‑score.</strong><br>\n  \\(z = \\frac{x - \\mu}{\\sigma} = \\frac{183 - 175}{8} = \\frac{8}{8} = 1\\).</p>\n  <p><strong>Step 3:</strong> \\(P(X > 183) = P(Z > 1)\\). From standard normal tables, \\(P(Z \\le 1) \\approx 0.8413\\).</p>\n  <p><strong>Step 4:</strong> Therefore \\(P(Z > 1) = 1 - 0.8413 = 0.1587\\).</p>\n  <p><strong>Final answer:</strong> \\(0.1587\\) (about 15.9% of men are taller).</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3",
+    "topic": ["Normal Distribution"],
+    "Question": {
+      "content": "For a normal distribution, approximately what percentage of data falls within 2 standard deviations of the mean?",
+      "type": "OBJ",
+      "options": ["68%", "95%", "99.7%", "50%"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "95%"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>📉 Empirical Rule (68‑95‑99.7 Rule)</h4>\n  <p>For any normal distribution:</p>\n  <ul>\n    <li>≈68% of data lies within \\(\\mu \\pm \\sigma\\) (1 standard deviation)</li>\n    <li>≈95% lies within \\(\\mu \\pm 2\\sigma\\)</li>\n    <li>≈99.7% lies within \\(\\mu \\pm 3\\sigma\\)</li>\n  </ul>\n  <p>This is a quick approximation used in many fields.</p>\n  <p><strong>Final answer:</strong> \\(95\\%\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4",
+    "topic": ["Normal Distribution"],
+    "Question": {
+      "content": "If X ∼ N(50, 25), what is \\(P(40 < X < 60)\\)?",
+      "type": "OBJ",
+      "options": ["0.6826", "0.9545", "0.9973", "0.5"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.9545"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>🔔 Normal – Probability Between Two Values</h4>\n  <p><strong>Step 1:</strong> Here \\(\\mu = 50\\) and \\(\\sigma^2 = 25\\), so \\(\\sigma = 5\\).</p>\n  <p><strong>Step 2:</strong> Notice that \\(40 = \\mu - 2\\sigma\\) and \\(60 = \\mu + 2\\sigma\\).</p>\n  <p><strong>Step 3:</strong> By the empirical rule, the probability within 2 standard deviations of the mean is about 95.45% (more precisely 0.9545).</p>\n  <p><strong>Step 4:</strong> Using z‑scores: \\(z_1 = (40-50)/5 = -2\\), \\(z_2 = (60-50)/5 = 2\\).<br>\n  \\(P(-2 < Z < 2) = \\Phi(2) - \\Phi(-2) = 0.9772 - 0.0228 = 0.9544\\).</p>\n  <p><strong>Final answer:</strong> \\(0.9545\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5",
+    "topic": ["Normal Distribution"],
+    "Question": {
+      "content": "Define the normal probability distribution. State its probability density function and mention the significance of the parameters μ and σ.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The normal distribution is a continuous probability distribution that is symmetric and bell‑shaped. Its PDF is \\(f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2}\\) for \\(-\\infty < x < \\infty\\). The parameter μ is the mean (center), and σ is the standard deviation (spread)."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>📘 Normal Distribution – Definition</h4>\n  <p>The normal (Gaussian) distribution is the most important continuous distribution. It arises naturally from the Central Limit Theorem.</p>\n  <p><strong>PDF:</strong> \\(f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} \\, e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2}\\)</p>\n  <p><strong>Parameters:</strong><br>\n  • \\(\\mu\\) (mean) – determines the center of the distribution.<br>\n  • \\(\\sigma\\) (standard deviation) – controls the spread; larger σ gives a wider, flatter curve.</p>\n  <p>It is symmetric about μ, and the total area under the curve is 1.</p>\n</div>"
+    }
+  },
+  {
+    "type": "heading",
+    "heading": "Binomial Distribution"
+  },
+  {
+    "type": "Question",
+    "name": "Question 1",
+    "topic": ["Binomial Distribution"],
+    "Question": {
+      "content": "A fair die is rolled 10 times. What is the probability of getting exactly 3 sixes?",
+      "type": "OBJ",
+      "options": ["0.1550", "0.2150", "0.1215", "0.2900"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.1550"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>🎲 Binomial Probability – Exactly k Successes</h4>\n  <p><strong>Step 1: Identify parameters.</strong><br>\n  Number of trials: \\(n = 10\\)<br>\n  Probability of success (rolling a six): \\(p = \\frac{1}{6} \\approx 0.1667\\)<br>\n  Probability of failure: \\(q = 1-p = \\frac{5}{6}\\)<br>\n  Desired successes: \\(k = 3\\)</p>\n  <p><strong>Step 2: Use binomial formula.</strong><br>\n  \\(P(X=k) = \\binom{n}{k} p^k q^{n-k}\\)<br>\n  \\(\\binom{10}{3} = 120\\)</p>\n  <p><strong>Step 3: Compute powers.</strong><br>\n  \\(p^3 = (1/6)^3 = 1/216\\)<br>\n  \\(q^{7} = (5/6)^7 \\approx 0.279082\\)</p>\n  <p><strong>Step 4: Multiply.</strong><br>\n  \\(120 \\times \\frac{1}{216} \\times 0.279082 = 120 \\times 0.001291 = 0.15492 \\approx 0.1550\\)</p>\n  <p><strong>Final answer:</strong> \\(0.1550\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2",
+    "topic": ["Binomial Distribution"],
+    "Question": {
+      "content": "In a binomial distribution with n = 15 and p = 0.4, what is the mean and variance?",
+      "type": "OBJ",
+      "options": ["μ=6, σ²=3.6", "μ=6, σ²=2.4", "μ=4, σ²=3.6", "μ=4, σ²=2.4"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "μ=6, σ²=3.6"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>📊 Binomial – Mean and Variance</h4>\n  <p>For a binomial distribution:<br>\n  • Mean \\(\\mu = n p\\)<br>\n  • Variance \\(\\sigma^2 = n p (1-p)\\)</p>\n  <p><strong>Step 1:</strong> \\(n = 15\\), \\(p = 0.4\\).<br>\n  \\(\\mu = 15 \\times 0.4 = 6\\)</p>\n  <p><strong>Step 2:</strong> \\(1-p = 0.6\\)<br>\n  \\(\\sigma^2 = 15 \\times 0.4 \\times 0.6 = 15 \\times 0.24 = 3.6\\)</p>\n  <p><strong>Final answer:</strong> \\(\\mu = 6,\\; \\sigma^2 = 3.6\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3",
+    "topic": ["Binomial Distribution"],
+    "Question": {
+      "content": "The probability that a student passes an exam is 0.8. If 6 students are selected at random, what is the probability that at least 5 pass?",
+      "type": "OBJ",
+      "options": ["0.6554", "0.2621", "0.3932", "0.9011"]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.6554"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>✅ Binomial – At Least k Successes</h4>\n  <p><strong>Step 1:</strong> \\(n=6\\), \\(p=0.8\\), \\(q=0.2\\).<br>\n  \"At least 5\" means \\(X=5\\) or \\(X=6\\).</p>\n  <p><strong>Step 2: Compute \\(P(X=5)\\).</strong><br>\n  \\(P(5) = \\binom{6}{5} (0.8)^5 (0.2)^1\\)<br>\n  \\(\\binom{6}{5} = 6\\)<br>\n  \\((0.8)^5 = 0.32768\\)<br>\n  Multiply: \\(6 \\times 0.32768 \\times 0.2 = 6 \\times 0.065536 = 0.393216\\)</p>\n  <p><strong>Step 3: Compute \\(P(X=6)\\).</strong><br>\n  \\(P(6) = \\binom{6}{6} (0.8)^6 (0.2)^0 = 1 \\times 0.262144 \\times 1 = 0.262144\\)</p>\n  <p><strong>Step 4: Add.</strong><br>\n  \\(0.393216 + 0.262144 = 0.65536 \\approx 0.6554\\)</p>\n  <p><strong>Final answer:</strong> \\(0.6554\\)</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4",
+    "topic": ["Binomial Distribution"],
+    "Question": {
+      "content": "Which of the following is NOT a property of a binomial experiment?",
+      "type": "OBJ",
+      "options": [
+        "Fixed number of trials",
+        "Independent trials",
+        "Probability of success changes from trial to trial",
+        "Only two possible outcomes per trial"
+      ]
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Probability of success changes from trial to trial"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>🔍 Binomial Experiment Conditions</h4>\n  <p>A binomial experiment must satisfy:</p>\n  <ul>\n    <li>Fixed number of trials \\(n\\)</li>\n    <li>Each trial has exactly two outcomes: success/failure</li>\n    <li>Trials are independent</li>\n    <li><strong>Probability of success \\(p\\) is constant from trial to trial</strong></li>\n  </ul>\n  <p>The statement \"Probability of success changes from trial to trial\" violates the constant‑p condition, so it is NOT a property.</p>\n  <p><strong>Final answer:</strong> Probability of success changes from trial to trial.</p>\n</div>"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5",
+    "topic": ["Binomial Distribution"],
+    "Question": {
+      "content": "Define the binomial probability distribution. State its probability mass function, mean, and variance.",
+      "type": "subjective"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The binomial distribution models the number of successes in a fixed number of independent Bernoulli trials. Its PMF is \\(P(X=k) = \\binom{n}{k} p^k (1-p)^{n-k}\\) for \\(k=0,1,\\ldots,n\\). Mean = np, variance = np(1-p)."
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor); font-family: inherit; line-height: 1.5;'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>📘 Binomial Distribution – Full Definition</h4>\n  <p>The binomial distribution counts successes in a fixed number \\(n\\) of independent trials, each with success probability \\(p\\).</p>\n  <p><strong>Key formulas:</strong><br>\n  • PMF: \\(P(X=k) = \\binom{n}{k} p^k (1-p)^{n-k}, \\quad k=0,1,\\dots,n\\)<br>\n  • Mean: \\(E[X] = n p\\)<br>\n  • Variance: \\(\\operatorname{Var}(X) = n p (1-p)\\)</p>\n  <p>The binomial coefficient \\(\\binom{n}{k}\\) counts the number of ways to choose which trials are successes. It is used in quality control, polling, and many other applications.</p>\n</div>"
+    }
+  }
+]
