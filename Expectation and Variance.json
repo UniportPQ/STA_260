@@ -1,0 +1,191 @@
+[
+  {
+    "type": "pageInfo",
+    "kind": "subjective",
+    "course_title": "Introduction to Probability and Statistics",
+    "code": "STA 260",
+    "session": "Expectation and Variance",
+    "topics": ["Probability", "Statistics", "Expectation", "Variance", "Linear Functions"],
+    "time": "90"
+  },
+  {
+    "type": "Instruction",
+    "content": "Answer all Questions"
+  },
+  {
+    "type": "heading",
+    "heading": "Expectation and Variance"
+  },
+  {
+    "type": "Question",
+    "name": "Question 1",
+    "topic": [
+      "Probability",
+      "Statistics",
+      "Expectation"
+    ],
+    "Question": {
+      "content": "What is Expectation and Variance?",
+      "type": "subjective"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding Expectation and Variance</h4>\n  <p><strong style='color: var(--strongColor);'>Expectation (Mean)</strong><br>\n  The expected value, denoted as \\(E[X]\\), is the long-run average value of a random variable. Think of it as the center of mass of a probability distribution. For a discrete variable, it's calculated as the sum of each outcome multiplied by its probability: \\(E[X] = \\sum x_i \\cdot P(X=x_i)\\).</p>\n  <div style='margin: 12px 0;'>\n    <strong style='color: var(--strongColor);'>Variance</strong><br>\n    Variance, denoted as \\(Var(X)\\) or \\(\\sigma^2\\), measures the spread or dispersion of a random variable around its mean. It quantifies how much the values \"vary\". A small variance means the values are clustered close to the mean, while a large variance indicates they are more spread out. It's calculated as \\(Var(X) = E[(X - \\mu)^2] = E[X^2] - (E[X])^2\\).\n  </div>\n</div>"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Expectation is the average value of a random variable, while variance measures the spread of its distribution around that average."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2",
+    "topic": [
+      "Probability",
+      "Statistics",
+      "Expectation"
+    ],
+    "Question": {
+      "content": "A fair die is rolled. Calculate the expected value of the number that appears.",
+      "type": "subjective"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Expected Value of a Die Roll</h4>\n  <p>The possible outcomes are 1, 2, 3, 4, 5, and 6, each with a probability of \\(\\frac{1}{6}\\). The expected value is the sum of each outcome multiplied by its probability:</p>\n  <p style='background: var(--preset-bg-color); padding: 8px; border-radius: 6px; font-family: monospace;'>\\(E[X] = 1 \\cdot \\frac{1}{6} + 2 \\cdot \\frac{1}{6} + 3 \\cdot \\frac{1}{6} + 4 \\cdot \\frac{1}{6} + 5 \\cdot \\frac{1}{6} + 6 \\cdot \\frac{1}{6}\\)</p>\n  <p>This simplifies to \\(E[X] = \\frac{1+2+3+4+5+6}{6} = \\frac{21}{6} = 3.5\\). The expected value is 3.5, even though it's impossible to roll a 3.5.</p>\n</div>"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "3.5"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3",
+    "topic": [
+      "Probability",
+      "Statistics",
+      "Expectation"
+    ],
+    "Question": {
+      "content": "A random variable X has the probability distribution: P(X=0) = 0.2, P(X=1) = 0.5, P(X=2) = 0.3. Find the expected value \\(E[X]\\).",
+      "type": "subjective"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Calculating Expectation</h4>\n  <p>The expected value is found by summing each value of X multiplied by its probability.</p>\n  <p style='background: var(--preset-bg-color); padding: 8px; border-radius: 6px; font-family: monospace;'>\\(E[X] = (0 \\times 0.2) + (1 \\times 0.5) + (2 \\times 0.3)\\)</p>\n  <p>\\(E[X] = 0 + 0.5 + 0.6 = 1.1\\)</p>\n</div>"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "1.1"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4",
+    "topic": [
+      "Probability",
+      "Statistics",
+      "Variance"
+    ],
+    "Question": {
+      "content": "For the random variable X in the previous question (P(X=0)=0.2, P(X=1)=0.5, P(X=2)=0.3), calculate the variance \\(Var(X)\\).",
+      "type": "subjective"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Variance Calculation</h4>\n  <p>First, we need \\(E[X]\\) and \\(E[X^2]\\). We found \\(E[X] = 1.1\\).</p>\n  <p><strong>Step 1: Calculate \\(E[X^2]\\)</strong><br>\n  \\(E[X^2] = (0^2 \\times 0.2) + (1^2 \\times 0.5) + (2^2 \\times 0.3) = (0) + (0.5) + (1.2) = 1.7\\)</p>\n  <p><strong>Step 2: Apply the variance formula</strong><br>\n  \\(Var(X) = E[X^2] - (E[X])^2 = 1.7 - (1.1)^2 = 1.7 - 1.21 = 0.49\\)</p>\n</div>"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "0.49"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5",
+    "topic": [
+      "Probability",
+      "Statistics",
+      "Expectation",
+      "Linear Functions"
+    ],
+    "Question": {
+      "content": "Given that \\(E[X] = 5\\), find \\(E[3X + 2]\\).",
+      "type": "subjective"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Linearity of Expectation</h4>\n  <p>Expectation is a linear operator. This means \\(E[aX + b] = aE[X] + b\\).</p>\n  <p style='background: var(--preset-bg-color); padding: 8px; border-radius: 6px; font-family: monospace;'>\\(E[3X + 2] = 3E[X] + 2 = 3(5) + 2 = 15 + 2 = 17\\)</p>\n  <p>We can use this property without needing to know the full distribution of X.</p>\n</div>"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "17"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 6",
+    "topic": [
+      "Probability",
+      "Statistics",
+      "Variance",
+      "Linear Functions"
+    ],
+    "Question": {
+      "content": "Given that \\(Var(X) = 4\\), find \\(Var(2X + 3)\\).",
+      "type": "subjective"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Properties of Variance</h4>\n  <p>Adding a constant does not affect variance. Multiplying by a constant scales the variance by the square of that constant.</p>\n  <p>Formula: \\(Var(aX + b) = a^2 Var(X)\\)</p>\n  <p style='background: var(--preset-bg-color); padding: 8px; border-radius: 6px; font-family: monospace;'>\\(Var(2X + 3) = 2^2 \\times Var(X) = 4 \\times 4 = 16\\)</p>\n</div>"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "16"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 7",
+    "topic": [
+      "Probability",
+      "Statistics",
+      "Expectation"
+    ],
+    "Question": {
+      "content": "A random variable X has the probability density function \\(f(x) = 2x\\) for \\(0 < x < 1\\). Find \\(E[X]\\).",
+      "type": "subjective"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Expectation for Continuous Variables</h4>\n  <p>For a continuous variable, the expectation is the integral of x times its probability density function.</p>\n  <p>\\(E[X] = \\int_{0}^{1} x \\cdot f(x) \\, dx = \\int_{0}^{1} x \\cdot (2x) \\, dx = \\int_{0}^{1} 2x^2 \\, dx\\)</p>\n  <p>This evaluates to \\( \\left[ \\frac{2x^3}{3} \\right]_{0}^{1} = \\frac{2}{3} \\approx 0.667\\).</p>\n</div>"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\frac{2}{3}\\)"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 8",
+    "topic": [
+      "Probability",
+      "Statistics",
+      "Variance"
+    ],
+    "Question": {
+      "content": "A random variable X has the probability density function \\(f(x) = 2x\\) for \\(0 < x < 1\\). Find \\(Var(X)\\).",
+      "type": "subjective"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n  <h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Variance for Continuous Variables</h4>\n  <p>First, we need \\(E[X]\\) and \\(E[X^2]\\). From the previous question, \\(E[X] = \\frac{2}{3}\\).</p>\n  <p><strong>Calculate \\(E[X^2]\\)</strong><br>\n  \\(E[X^2] = \\int_{0}^{1} x^2 \\cdot f(x) \\, dx = \\int_{0}^{1} x^2 \\cdot (2x) \\, dx = \\int_{0}^{1} 2x^3 \\, dx = \\left[ \\frac{2x^4}{4} \\right]_{0}^{1} = \\frac{1}{2}\\).</p>\n  <p><strong>Apply variance formula</strong><br>\n  \\(Var(X) = E[X^2] - (E[X])^2 = \\frac{1}{2} - \\left(\\frac{2}{3}\\right)^2 = \\frac{1}{2} - \\frac{4}{9} = \\frac{9}{18} - \\frac{8}{18} = \\frac{1}{18}\\).</p>\n</div>"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "\\(\\frac{1}{18}\\)"
+    }
+  }
+]
+
+
