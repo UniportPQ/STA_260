@@ -1,0 +1,138 @@
+[
+  {
+    "type": "pageInfo",
+    "kind": "subjective",
+    "course_title": "Introduction to Probability and Statistics",
+    "code": "STA 260",
+    "session": "Discrete Random Variables",
+    "topics": ["Statistics", "Probability", "Discrete Random Variable", "Probability Distribution", "Variance"],
+    "time": "90"
+  },
+  {
+    "type": "Instruction",
+    "content": "Answer all Questions"
+  },
+  {
+    "type": "heading",
+    "heading": "Discrete Random Variables"
+  },
+  {
+    "type": "Question",
+    "name": "Question 1",
+    "topic": [
+      "Statistics",
+      "Probability",
+      "Discrete Random Variable"
+    ],
+    "Question": {
+      "content": "What is a Discrete Random Variable?",
+      "type": "subjective"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n<h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Definition of a Discrete Random Variable</h4>\n<p>A <strong>random variable</strong> is a function that assigns a numerical value to each outcome of a random experiment.</p>\n<div style='margin-bottom: 12px;'>\n<strong style='color: var(--strongColor);'>Key Characteristic</strong><br>\nA <strong>discrete</strong> random variable can only take a <strong>finite</strong> or <strong>countably infinite</strong> number of distinct values.<br>\nThink of it as values you can <strong>list</strong> or <strong>count</strong>, like the number of heads in 3 coin flips (0, 1, 2, 3).\n</div>\n<div style='margin-bottom: 12px;'>\n<strong style='color: var(--strongColor);'>Simple Analogy</strong><br>\nImagine rolling a standard die. The outcome (1, 2, 3, 4, 5, or 6) is a discrete random variable because there are a specific, countable number of possible results.\n</div>\n<div>\n<strong style='color: var(--strongColor);'>Contrast with Continuous</strong><br>\nUnlike a continuous random variable (which can take any value within a range, like height or temperature), a discrete random variable has <strong>gaps</strong> between its possible values.\n</div>\n</div>"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "A discrete random variable is a variable that can take on a finite or countably infinite number of distinct values, each associated with a probability."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 2",
+    "topic": [
+      "Statistics",
+      "Probability",
+      "Discrete Random Variable"
+    ],
+    "Question": {
+      "content": "Which of the following is an example of a discrete random variable?",
+      "type": "OBJ",
+      "options": [
+        "The height of students in a class",
+        "The time it takes to run a marathon",
+        "The number of cars passing through an intersection in an hour",
+        "The temperature of a room"
+      ]
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n<h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Identifying Discrete vs. Continuous</h4>\n<p>The correct answer is <strong>C (The number of cars passing through an intersection in an hour)</strong>.</p>\n<div style='margin-bottom: 12px;'>\n<strong style='color: var(--strongColor);'>Why this is discrete</strong><br>\nThe number of cars is a <strong>count</strong>. You can have 0, 1, 2, 3, ... cars. These are distinct, separate values with no possible fractional values between them.\n</div>\n<div style='margin-bottom: 12px;'>\n<strong style='color: var(--strongColor);'>Why the others are continuous</strong><br>\n• <strong>Height</strong> and <strong>temperature</strong> can be measured to any level of precision (e.g., 5.5 feet, 5.55 feet).<br>\n• <strong>Time</strong> for a marathon is also continuous (e.g., 2.5 hours, 2.53 hours).\n</div>\n<div>\n<strong style='color: var(--strongColor);'>Quick Rule</strong><br>\nIf the variable represents a <strong>count</strong> (number of something), it's usually discrete. If it's a <strong>measurement</strong>, it's usually continuous.\n</div>\n</div>"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "The number of cars passing through an intersection in an hour"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 3",
+    "topic": [
+      "Statistics",
+      "Probability",
+      "Discrete Random Variable",
+      "Probability Distribution"
+    ],
+    "Question": {
+      "content": "What are the two conditions that all probabilities in a discrete probability distribution must satisfy?",
+      "type": "subjective"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n<h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Conditions for a Valid Probability Distribution</h4>\n<p>For any discrete random variable \\( X \\) with possible values \\( x_1, x_2, x_3, ... \\) and probabilities \\( P(X = x_i) \\), two conditions must hold true.</p>\n<div style='margin-bottom: 12px;'>\n<strong style='color: var(--strongColor);'>Condition 1: Non‑Negativity</strong><br>\nEach individual probability must be between 0 and 1, inclusive.<br>\n\\( 0 \\leq P(X = x_i) \\leq 1 \\) for all \\( i \\).<br>\nA probability can never be negative or greater than 1.\n</div>\n<div style='margin-bottom: 12px;'>\n<strong style='color: var(--strongColor);'>Condition 2: Total Probability</strong><br>\nThe sum of all probabilities for all possible outcomes must equal exactly 1.<br>\n\\( \\sum_{i} P(X = x_i) = 1 \\).<br>\nThis means that one of the outcomes must occur with certainty.\n</div>\n<div>\n<strong style='color: var(--strongColor);'>Example Check</strong><br>\nFor a fair coin, \\( P(Heads) = 0.5 \\) and \\( P(Tails) = 0.5 \\). Both are between 0 and 1, and \\( 0.5 + 0.5 = 1 \\), satisfying both conditions.\n</div>\n</div>"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "1. 0 ≤ P(X = xᵢ) ≤ 1 for each outcome.<br>2. Σ P(X = xᵢ) = 1 for all outcomes."
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 4",
+    "topic": [
+      "Statistics",
+      "Probability",
+      "Discrete Random Variable"
+    ],
+    "Question": {
+      "content": "The expected value of a discrete random variable is best described as the:",
+      "type": "OBJ",
+      "options": [
+        "Most likely outcome",
+        "Long-run average value after many repetitions",
+        "Median value of the distribution",
+        "Sum of all possible values"
+      ]
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n<h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Understanding Expected Value</h4>\n<p>The correct answer is <strong>B (Long-run average value after many repetitions)</strong>.</p>\n<div style='margin-bottom: 12px;'>\n<strong style='color: var(--strongColor);'>Intuitive Definition</strong><br>\nThe expected value (often denoted \\( E[X] \\) or \\( \\mu \\)) is the theoretical <strong>average</strong> you would get if you repeated the random experiment an infinite number of times.\n</div>\n<div style='margin-bottom: 12px;'>\n<strong style='color: var(--strongColor);'>Mathematical Formula</strong><br>\nFor a discrete random variable \\( X \\), the expected value is calculated as:<br>\n\\( E[X] = \\sum_{i} x_i \\cdot P(X = x_i) \\).<br>\nThis is a weighted average, where each value is weighted by its probability.\n</div>\n<div>\n<strong style='color: var(--strongColor);'>Simple Example</strong><br>\nIn a fair die, the expected value is \\( 1 \\cdot \\frac{1}{6} + 2 \\cdot \\frac{1}{6} + ... + 6 \\cdot \\frac{1}{6} = 3.5 \\).<br>\nYou never actually roll a 3.5, but over many rolls, the average will be 3.5.\n</div>\n</div>"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "Long-run average value after many repetitions"
+    }
+  },
+  {
+    "type": "Question",
+    "name": "Question 5",
+    "topic": [
+      "Statistics",
+      "Probability",
+      "Discrete Random Variable",
+      "Variance"
+    ],
+    "Question": {
+      "content": "A discrete random variable X has the following probability distribution: P(X=1) = 0.2, P(X=2) = 0.5, P(X=3) = 0.3. Calculate the expected value E[X] and the variance Var(X).",
+      "type": "subjective"
+    },
+    "Explanation": {
+      "type": "string",
+      "content": "<div style='color: var(--explainColor); background: var(--explainBg); padding: 15px; border-radius: 8px; border-left: 4px solid var(--strongColor);'>\n<h4 style='color: var(--strongColor); margin-top: 0; margin-bottom: 15px;'>Step-by-Step Calculation</h4>\n\n<div style='margin-bottom: 15px;'>\n<strong style='color: var(--strongColor);'>Step 1: Calculate the Expected Value (Mean) \\( \\mu = E[X] \\)</strong><br>\nUse the formula \\( E[X] = \\sum x \\cdot P(X=x) \\):<br>\n\\( E[X] = (1 \\times 0.2) + (2 \\times 0.5) + (3 \\times 0.3) \\)<br>\n\\( E[X] = 0.2 + 1.0 + 0.9 \\)<br>\n\\( E[X] = 2.1 \\)\n</div>\n\n<div style='margin-bottom: 15px;'>\n<strong style='color: var(--strongColor);'>Step 2: Calculate \\( E[X^2] \\)</strong><br>\n\\( E[X^2] = \\sum x^2 \\cdot P(X=x) \\):<br>\n\\( E[X^2] = (1^2 \\times 0.2) + (2^2 \\times 0.5) + (3^2 \\times 0.3) \\)<br>\n\\( E[X^2] = (1 \\times 0.2) + (4 \\times 0.5) + (9 \\times 0.3) \\)<br>\n\\( E[X^2] = 0.2 + 2.0 + 2.7 \\)<br>\n\\( E[X^2] = 4.9 \\)\n</div>\n\n<div>\n<strong style='color: var(--strongColor);'>Step 3: Calculate the Variance</strong><br>\nUse the computational formula \\( Var(X) = E[X^2] - (E[X])^2 \\):<br>\n\\( Var(X) = 4.9 - (2.1)^2 \\)<br>\n\\( Var(X) = 4.9 - 4.41 \\)<br>\n\\( Var(X) = 0.49 \\)\n</div>\n</div>"
+    },
+    "Answer": {
+      "type": "string",
+      "content": "E[X] = 2.1<br>Var(X) = 0.49"
+    }
+  }
+]
